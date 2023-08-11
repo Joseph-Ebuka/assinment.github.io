@@ -12,19 +12,39 @@
     <div class="form-container">
         
         <form action="form-container">
-            <h3>sign in</h3>
+            <h3>sign up</h3>
             <div class="inputContainer">
-                <input type="text" placeholder="email...."/>
-                <input type="text" placeholder="name...."/>
-                <input type="text" placeholder="nickname...."/>
-                
-            </div>
+                <input type="text" placeholder="email...." required/>
+                <input type="text" placeholder="name...." required/>
+                <input type="text" placeholder="username..."/ required>
+                <input type="password" placeholder="create password" required>
+                <input type="password" placeholder="confirm passsword" required>
+                <div class="age" style="display: flex;">
+                    <div class="ageBox">
+                        <label for="age1">15-30</label>
+                        <input type="radio" name="age" id="age1" style="width: 25px;">
+                    </div>
+                    <div class="ageBox">
+                        <label for="age2">31-50</label>
+                        <input type="radio" name="age" id="age2" style="width: 25px;">
+                    </div>
+                    <div class="ageBox">
+                        <label for="age3">51&above</label>
+                        <input type="radio" name="age" id="age3" style="width: 25px;">
+                    </div>
+                </div>
+                <h4>reasons for joining</h4>
+                <select name="reasons" id="reasons" style="cursor: pointer;">
+                    <option value="">all of them</option>
+                    <option value="">just to upload</option>
+                    <option value="">just to download</option>
+                </select>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
             <input type="submit">
+
+            <p>already have an account? <a href="#">login</a></p>
         </form>
 
-    </div>
-    <div class="textarea">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
 </body>
 

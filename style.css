@@ -8,7 +8,6 @@ body{
     align-items: center;
     justify-content: center;
     margin:200px auto;
-    background-color: green;
 }
 .form-container{
     display: flex;
@@ -16,13 +15,13 @@ body{
     justify-content: center;
     width: max-content;
     padding:50px;
-    background:rgb(50, 168, 50);
+    background:rgb(36, 189, 194);
 }
 h3{
     text-align: center;
     font-family: cursive;
     font-size: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: capitalize;
     margin: 10px;
 }
@@ -41,14 +40,14 @@ input{
     gap: 10px;
     display: flex;
     text-transform: capitalize;
-    border: none;
+    border: 3px solid blue;
     outline:none;
     padding: 5px;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 input:hover{
-    background-color: rgb(0, 255, 42);
+    border-color: rgb(0, 140, 255);
 }
 
 input[type = "submit"]{
@@ -65,5 +64,22 @@ input[type = "submit"]{
 }
 input[type = "submit"]:hover{
     transform: scale(1.03);
-    background-color: green;
+    background-color: rgb(0, 45, 128);
+}
+.ageBox{
+    display: flex;
+    flex-direction: column;
+    margin: 3px 20px;
+    color: white !important;
+}
+h4{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 200;
+}
+select{
+    width:200px;
+    text-align: center;
+    text-transform: capitalize;
 }
